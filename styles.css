@@ -17,6 +17,7 @@ $terracotta: #945d60;
 $herb: #626e60;
 $chilli: #af473c;
 $charcoal: #3c3c3c;
+$sage: #cad0c8;
 
 Tropical
 $ocean: #1fb58f;
@@ -42,6 +43,7 @@ body {
 }
 p {
     margin: 10px 20px;
+    font-size: 1em;
 }
 
 /* ======= center ======= */
@@ -101,6 +103,23 @@ p {
 #cell-left, #cell-mid, #cell-right {
     width: 33.33%;
 }
+.photo-box {
+    width: 100%;
+    height: 80%;
+    margin-top: 34px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#photo-left {
+    background-image: url("../PIX/AlleyCat.jpg");
+}
+#photo-mid {
+    background-image: url("../PIX/AfterUs.jpg");
+}
+#photo-right {
+    background-image: url("../PIX/ChapterHouse_beers.jpg");
+}
+
 
 /*  ======= ======= responsive  ======= ======= */
 
@@ -114,77 +133,95 @@ p {
 /* ======= desktop ======= */
 @media all and (min-width: 980px) and (max-width: 1199px) {
     body {
-        background-color: #879484;
+        background-color: #cad0c8;
+    }
+    #sidebar, #main {
+        display: table-cell;
     }
     #sidebar {
-        background-color: #626e60;
+        min-width: 160px;
+        height: 300px;
+        margin: 0;
+        background-color: #813772;
+    }
+    #main {
+        width: 100%;
+        height: 300px;
+        margin: 0;
+        background-color: #96858f;
     }
 }
 
 /* ======= portrait tablet to landscape and desktop ======= */
-@media (min-width: 468px) and (max-width: 779px) {
+@media all and (min-width: 468px) and (max-width: 979px) {
     body {
-        background-color: #1a0315;
+        background-color: #9099a2;
+    }
+    #sidebar, #main {
+        float: left;
+        display: inline-block;
+        width: 50%;
+        height: 220px;
     }
     #sidebar {
-        background-color: #535353;
+        background-color: #a239ca;
     }
     #main {
-        /*width: calc(100% - 135px);*/
-    }
-    #col-left {
-        /*float: left;
-        width: 49%;*/
-    }
-    #col-mid {
-        /*width: 49%;*/
-    }
-    #col-right {
-        /*width: 99%;*/
-    }
-    #footer {
-        /*clear: both;*/
+        background-color: #96858f;
     }
 }
 
 /* ======= landscape phone to portrait tablet ======= */
-@media (min-width: 179px) and (max-width: 468px) {
+@media all and (min-width: 320px) and (max-width: 467px) {
     body {
-        background-color: peachpuff ;
+        background-color: #d5d5d5;
     }
-    #header {
-        width: 100%;
+    #header, #footer {
+        height: 60px;
     }
-    #content1 {
-        height: 400px;
+    #sidebar, #main {
+        display: block;
+        height: 160px;
     }
     #sidebar {
-        clear: both;
-        width: 100%;
-        height: 200px;
+        background-color: #f24c4e;
     }
-    #main {
-        clear: both;
-        width: 100%;
+    #cell-left, #cell-mid, #cell-right {
+        height: 160px;
     }
-    #col-left, #col-mid, #col-right {
-        width: 100%;
+    #cell-left, #cell-mid {
+        display: inline-block;
+        width: 50%;
     }
-    #footer {
-        clear: both;
+    #cell-right {
+        display: block;
+        width: 100%;
     }
 }
 
 /* ======= landscape phone ======= */
-@media (max-width: 180px) {
+@media all and (max-width: 319px) {
     body {
         background-color: thistle ;
+        min-width: 300px;
+    }
+    #header, #footer {
+        height: 60px;
+    }
+    #sidebar, #main {
+        display: block;
+        height: 160px;
+    }
+    #sidebar {
+        background-color: #f24c4e;
+    }
+    #cell-left, #cell-mid, #cell-right {
+        clear: both;
+        display: block;
+        width: 100%;
+        height: 160px;
     }
 }
-
-
-
-
 
 /*  ======= ======= ARCHIVE  ======= ======= */
 /*  ======= ======= ARCHIVE  ======= ======= */
