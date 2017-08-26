@@ -1,0 +1,172 @@
+
+
+/* =======  ======= general  ======= ======= */
+html, body {
+    height: 100%;
+}
+body {
+    font-family: "Ariel", sans-serif;
+}
+p {
+    margin: 10px 20px;
+}
+
+/* ======= center ======= */
+/* note: wrapper for demo only */
+#page-wrap {
+     /*width: 700px;*/
+     width: 80%;
+     min-width: 350px;
+     height: 100%;
+     margin: 20px auto;
+     /*overflow-x: auto;*/
+}
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+
+/*  ======= ======= sections  ======= ======= */
+.section {
+    margin: 0;
+    border: 2px solid purple;
+}
+.row {
+    margin: 0;
+}
+#header, #sidebar, #main, #footer {
+    box-sizing: border-box;
+}
+#header {
+    height: 10%;
+    margin: 0;
+    background-color: #ccc;
+}
+#sidebar {
+    /*float: left;*/
+    display: table-cell;
+    min-width: 160px;
+    height: 300px;
+    margin: 0;
+    background-color: #eee;
+}
+#main {
+    display: table-cell;
+    /*float: right;*/
+    width: 100%;
+    height: 98%;
+    vertical-align: top;
+    margin: 0;
+    background-color: #fff;
+}
+/*#content1 {
+    width: 100%;
+    height: 30%;
+}
+#content2 {
+    margin-top: 5px;
+    height: 310px;
+}*/
+.col {
+    float: left;
+    height: 310px;
+    background-color: thistle;
+    border: 2px solid crimson;
+    box-sizing: border-box;
+}
+#col-left, #col-mid, #col-right {
+    width: 33.33%;
+}
+/*#col-mid {
+    width: 33%;
+}*/
+#footer {
+    clear: both;
+    height: 10%;
+    background-color: #ddd;
+}
+
+/*  ======= ======= responsive  ======= ======= */
+
+/* ======= desktop ======= */
+@media (min-width: 780px) and (max-width: 900px) {
+    body {
+        background-color: #6e3667;
+    }
+    #sidebar {
+        background-color: #88d317;
+    }
+}
+
+/* ======= portrait tablet to landscape and desktop ======= */
+@media (min-width: 468px) and (max-width: 779px) {
+    body {
+        background-color: #1a0315;
+    }
+    #sidebar {
+        background-color: #535353;
+    }
+    #main {
+        /*width: calc(100% - 135px);*/
+    }
+    #col-left {
+        /*float: left;
+        width: 49%;*/
+    }
+    #col-mid {
+        /*width: 49%;*/
+    }
+    #col-right {
+        /*width: 99%;*/
+    }
+    #footer {
+        /*clear: both;*/
+    }
+}
+
+/* ======= landscape phone to portrait tablet ======= */
+@media (min-width: 179px) and (max-width: 468px) {
+    body {
+        background-color: peachpuff ;
+    }
+    #header {
+        width: 100%;
+    }
+    #content1 {
+        height: 400px;
+    }
+    #sidebar {
+        clear: both;
+        width: 100%;
+        height: 200px;
+    }
+    #main {
+        clear: both;
+        width: 100%;
+    }
+    #col-left, #col-mid, #col-right {
+        width: 100%;
+    }
+    #footer {
+        clear: both;
+    }
+}
+
+/* ======= landscape phone ======= */
+@media (max-width: 180px) {
+    body {
+        background-color: thistle ;
+    }
+}
+
+
+
+
+
+/*  ======= ======= ARCHIVE  ======= ======= */
+/*  ======= ======= ARCHIVE  ======= ======= */
+/*  ======= ======= ARCHIVE  ======= ======= */
