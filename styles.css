@@ -1,6 +1,39 @@
 
+/*
+Muted and Minimal
+$dusty: #96858f;
+$lavendar: #6d7993;
+$overcast: #9099a2;
+$paper: #d5d5d5;
 
-/* =======  ======= general  ======= ======= */
+Warm and Bold
+$black: #000000;
+$ink: #062f4f;
+$posy: #813772;
+$embers: #b82601;
+
+Earthy and Fresh
+$terracotta: #945d60;
+$herb: #626e60;
+$chilli: #af473c;
+$charcoal: #3c3c3c;
+
+Tropical
+$ocean: #1fb58f;
+$sand: #eab126;
+$cocktail: #f24c4e;
+$palm: #1b73b4;
+
+Unexpected combinations
+$violet: #6e3667;
+$lime: #88d317;
+$plum: #1a0315;
+$shadow: #535353;
+$fuchia: #a239ca;
+$ink: #062f4f;
+*/
+
+/* ======= ======= general ======= ======= */
 html, body {
     height: 100%;
 }
@@ -12,93 +45,79 @@ p {
 }
 
 /* ======= center ======= */
-/* note: wrapper for demo only */
 #page-wrap {
-     /*width: 700px;*/
-     width: 80%;
-     min-width: 350px;
-     height: 100%;
-     margin: 20px auto;
-     /*overflow-x: auto;*/
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
 }
-.clearfix:before,
+
+/* ======= clear floats ======= */
 .clearfix:after {
     content: " ";
     display: table;
-}
-.clearfix:after {
     clear: both;
 }
 
-/*  ======= ======= sections  ======= ======= */
+/*  ======= ======= sections ======= ======= */
 .section {
     margin: 0;
-    border: 2px solid purple;
-}
-.row {
-    margin: 0;
+    border: 2px solid #495247;
 }
 #header, #sidebar, #main, #footer {
     box-sizing: border-box;
 }
-#header {
-    height: 10%;
+#header, #footer {
+    height: 100px;
     margin: 0;
-    background-color: #ccc;
+    background-color: #945d60;
+}
+#sidebar, #main {
+    display: table-cell;
 }
 #sidebar {
-    /*float: left;*/
-    display: table-cell;
     min-width: 160px;
     height: 300px;
     margin: 0;
     background-color: #eee;
 }
 #main {
-    display: table-cell;
-    /*float: right;*/
     width: 100%;
-    height: 98%;
-    vertical-align: top;
+    height: 300px;
     margin: 0;
-    background-color: #fff;
+    background-color: #96858f;
 }
-/*#content1 {
-    width: 100%;
-    height: 30%;
-}
-#content2 {
-    margin-top: 5px;
-    height: 310px;
-}*/
-.col {
-    float: left;
-    height: 310px;
-    background-color: thistle;
-    border: 2px solid crimson;
-    box-sizing: border-box;
-}
-#col-left, #col-mid, #col-right {
-    width: 33.33%;
-}
-/*#col-mid {
-    width: 33%;
-}*/
 #footer {
     clear: both;
-    height: 10%;
-    background-color: #ddd;
+}
+
+/*  ======= ======= content cells ======= ======= */
+.cell {
+    float: left;
+    height: 310px;
+    background-color: #af473c;
+    border: 2px solid #495247;
+    box-sizing: border-box;
+}
+#cell-left, #cell-mid, #cell-right {
+    width: 33.33%;
 }
 
 /*  ======= ======= responsive  ======= ======= */
 
-/* ======= desktop ======= */
-@media (min-width: 780px) and (max-width: 900px) {
+/* ======= large desktop ======= */
+@media all and (min-width: 1200px) {
     body {
-        background-color: #6e3667;
+        background-color: white;
+    }
+}
+
+/* ======= desktop ======= */
+@media all and (min-width: 980px) and (max-width: 1199px) {
+    body {
+        background-color: #879484;
     }
     #sidebar {
-        background-color: #88d317;
+        background-color: #626e60;
     }
 }
 
