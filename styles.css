@@ -119,13 +119,13 @@ p {
     box-sizing: border-box;
 }
 #photo-left {
-    background-image: url("../PIX/AlleyCat.jpg");
+    background-image: url("../images/AlleyCat.jpg");
 }
 #photo-mid {
-    background-image: url("../PIX/AfterUs.jpg");
+    background-image: url("../images/AfterUs.jpg");
 }
 #photo-right {
-    background-image: url("../PIX/ChapterHouse_beers.jpg");
+    background-image: url("../images/ChapterHouse_beers.jpg");
 }
 
 /*  ======= ======= responsive  ======= ======= */
@@ -182,7 +182,7 @@ p {
         height: 220px;
     }
     #sidebar {
-        background-color: #a239ca;
+        background-color: #88d317;
     }
     #cell-box {
         clear: both;
@@ -207,6 +207,13 @@ p {
     #cell-box {
         clear: both;
         width: 100%;
+    }
+    .cell {
+        width: 100%;
+    }
+    .photo-box {
+        width: 90%;
+        margin: 0 auto;
     }
     #cell-left, #cell-mid {
         float: left;
@@ -245,7 +252,7 @@ p {
         width: 100%;
     }
     .photo-box {
-        width: 100%;
+        width: 90%;
         margin: 0 auto;
     }
 }
@@ -276,6 +283,11 @@ p {
         display: block;
         width: 100%;
         height: 160px;
+    }
+    .photo-box {
+        width: 140px;
+        /*height: auto;*/
+        margin: 0 auto;
     }
 }
 
